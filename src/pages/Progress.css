@@ -1,0 +1,131 @@
+.donut-row {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.donut {
+  text-align: center;
+}
+
+.donut-track {
+  stroke: var(--track-bg);
+}
+
+.donut-value {
+  font-size: 24px;
+  font-weight: 800;
+  fill: var(--stat-blue);
+  font-family: inherit;
+}
+
+.donut-label {
+  margin: 4px 0 0;
+  font-size: 13px;
+  color: var(--text-muted);
+}
+
+.rec-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.rec-list li {
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 12px;
+}
+
+.rec-list p {
+  margin: 8px 0 0;
+  font-size: 14px;
+  color: var(--text-2);
+  line-height: 1.55;
+}
+
+.queue {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.queue-item {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 12px 14px;
+}
+
+.queue-rank {
+  width: 30px;
+  height: 30px;
+  flex: 0 0 30px;
+  border-radius: 50%;
+  background: var(--grad-rank);
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.queue-title {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.queue-meta {
+  margin: 3px 0 0;
+  font-size: 13px;
+  color: var(--text-muted);
+}
+
+.area-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 14px;
+}
+
+.area-card {
+  border: 1px solid var(--border);
+  border-top: 4px solid var(--area, #2563eb);
+  border-radius: 14px;
+  padding: 16px;
+  background: var(--surface-2);
+}
+
+.area-card h3 {
+  margin: 0 0 8px;
+  font-size: 16px;
+  color: var(--area, var(--brand-blue));
+}
+
+.area-implemented {
+  margin: 0 0 10px;
+  font-size: 13.5px;
+  color: var(--text-soft);
+  line-height: 1.55;
+}
+
+.area-card ul {
+  margin: 0;
+  padding-left: 18px;
+  font-size: 13.5px;
+  color: var(--text-2);
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}

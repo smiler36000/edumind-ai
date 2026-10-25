@@ -1,0 +1,253 @@
+.page-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-bottom: 22px;
+}
+
+.page-title {
+  margin: 0;
+  font-size: 26px;
+  font-weight: 700;
+  color: var(--text);
+  letter-spacing: -0.02em;
+}
+
+.page-subtitle {
+  margin: 6px 0 0;
+  color: var(--text-muted);
+  font-size: 14.5px;
+  max-width: 65ch;
+}
+
+.page-actions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+/* ---------- Stat cards ---------- */
+.stat-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 16px;
+}
+
+.stat-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 18px;
+  box-shadow: 0 4px 14px var(--card-shadow);
+}
+
+.stat-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.stat-label {
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--text-muted);
+  font-weight: 600;
+}
+
+.stat-icon {
+  font-size: 16px;
+  color: var(--brand-soft);
+}
+
+.stat-value {
+  margin: 10px 0 4px;
+  font-size: 32px;
+  font-weight: 800;
+  color: var(--stat-blue);
+  line-height: 1;
+}
+
+.stat-hint {
+  margin: 0;
+  font-size: 13px;
+  color: var(--text-muted);
+}
+
+.stat-violet .stat-value {
+  color: var(--stat-violet);
+}
+.stat-green .stat-value {
+  color: var(--stat-green);
+}
+.stat-amber .stat-value {
+  color: var(--stat-amber);
+}
+.stat-red .stat-value {
+  color: var(--stat-red);
+}
+.stat-red {
+  border-color: var(--danger-border);
+  background: var(--danger-soft);
+}
+.stat-amber {
+  border-color: var(--warning-border);
+  background: var(--warning-soft);
+}
+
+/* ---------- Progress bars ---------- */
+.progress {
+  width: 100%;
+}
+
+.progress-label {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13.5px;
+  color: var(--text-soft);
+  margin-bottom: 6px;
+}
+
+.progress-label strong {
+  color: var(--stat-blue);
+}
+
+.progress-track {
+  height: 10px;
+  border-radius: 999px;
+  background: var(--track-bg);
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  border-radius: 999px;
+  background: var(--grad-progress);
+  transition: width 0.4s ease;
+}
+
+.progress-green .progress-fill {
+  background: var(--grad-progress-green);
+}
+
+.progress-amber .progress-fill {
+  background: var(--grad-progress-amber);
+}
+
+.progress-red .progress-fill {
+  background: var(--grad-progress-red);
+}
+
+/* ---------- Cards & panels ---------- */
+.panel {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 4px 14px var(--card-shadow);
+}
+
+.panel-title {
+  margin: 0 0 4px;
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.panel-subtitle {
+  margin: 0 0 16px;
+  font-size: 13.5px;
+  color: var(--text-muted);
+}
+
+/* ---------- Empty state ---------- */
+.empty-state {
+  text-align: center;
+  padding: 42px 20px;
+  border: 1px dashed var(--border-strong);
+  border-radius: 16px;
+  background: var(--surface-2);
+}
+
+.empty-icon {
+  font-size: 34px;
+  color: var(--brand-icon);
+}
+
+.empty-state h3 {
+  margin: 10px 0 6px;
+  color: var(--text);
+  font-size: 17px;
+}
+
+.empty-state p {
+  margin: 0 auto 14px;
+  color: var(--text-muted);
+  font-size: 14px;
+  max-width: 52ch;
+}
+
+/* ---------- Notices ---------- */
+.notice {
+  border-radius: 12px;
+  padding: 12px 14px;
+  font-size: 13.5px;
+  line-height: 1.5;
+  border: 1px solid;
+}
+
+.notice-info {
+  background: var(--notice-info-bg);
+  border-color: var(--notice-info-border);
+  color: var(--notice-info-fg);
+}
+
+.notice-warning {
+  background: var(--notice-warning-bg);
+  border-color: var(--notice-warning-border);
+  color: var(--notice-warning-fg);
+}
+
+.notice-success {
+  background: var(--notice-success-bg);
+  border-color: var(--notice-success-border);
+  color: var(--notice-success-fg);
+}
+
+/* ---------- Badges & pills ---------- */
+.badge {
+  display: inline-block;
+  padding: 3px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.badge-blue {
+  background: var(--badge-blue-bg);
+  color: var(--badge-blue-fg);
+}
+.badge-violet {
+  background: var(--badge-violet-bg);
+  color: var(--badge-violet-fg);
+}
+.badge-green {
+  background: var(--badge-green-bg);
+  color: var(--badge-green-fg);
+}
+.badge-amber {
+  background: var(--badge-amber-bg);
+  color: var(--badge-amber-fg);
+}
+.badge-red {
+  background: var(--badge-red-bg);
+  color: var(--badge-red-fg);
+}
+.badge-slate {
+  background: var(--badge-slate-bg);
+  color: var(--badge-slate-fg);
+}

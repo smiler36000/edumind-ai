@@ -1,0 +1,61 @@
+.overview-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.overview-item {
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.overview-item strong {
+  font-size: 26px;
+  color: var(--stat-blue);
+  line-height: 1;
+}
+
+.overview-item span {
+  font-size: 12.5px;
+  color: var(--text-muted);
+}
+
+/* Assignment-specific helpers */
+.deadline-strong {
+  font-weight: 700;
+  color: var(--text);
+}
+
+.deadline-strong.overdue {
+  color: var(--danger);
+}
+
+.priority-tag {
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 3px 9px;
+  border-radius: 6px;
+}
+
+.priority-tag.priority-high {
+  background: var(--badge-red-bg);
+  color: var(--badge-red-fg);
+}
+
+.priority-tag.priority-medium {
+  background: var(--badge-amber-bg);
+  color: var(--badge-amber-fg);
+}
+
+.priority-tag.priority-low {
+  background: var(--badge-green-bg);
+  color: var(--badge-green-fg);
+}
